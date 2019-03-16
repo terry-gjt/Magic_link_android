@@ -1,0 +1,3 @@
+include ':zxing-android-embedded', ':myapplication', ':Client', ':Server'
+include ':sample'
+include ':sample-nosupport'

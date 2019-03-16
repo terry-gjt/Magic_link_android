@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/title_all">
+        <com.magic.terry.magic_link_all.ui.CustomImageView
+            android:id="@+id/iv_title_back"
+            style="circle"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:clickable="true"
+            android:onClick="click"
+            app:src="@mipmap/m98" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_title_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/right"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_all"></View>
+
+</LinearLayout>

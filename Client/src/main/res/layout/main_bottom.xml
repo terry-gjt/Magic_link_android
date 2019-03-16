@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_all"
+        ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/lin_main_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center" >
+                <ImageView
+                    android:id="@+id/iv_main_home"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/home"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:id="@+id/tv_main_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页"
+                    android:layout_marginTop="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/home_back_unselected"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_main_screen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center" >
+                <ImageView
+                    android:id="@+id/iv_main_screen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/screen"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:id="@+id/tv_main_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="屏幕分享"
+                    android:layout_marginTop="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/home_back_unselected"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_main_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center" >
+                <ImageView
+                    android:id="@+id/iv_main_user"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ad"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:id="@+id/tv_main_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广告投放"
+                    android:layout_marginTop="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/home_back_unselected"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_main_screening"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/iv_main_screening"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/admin"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:id="@+id/tv_main_screening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管理员"
+                    android:layout_marginTop="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/home_back_unselected"/>
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

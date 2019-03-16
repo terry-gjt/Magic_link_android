@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <include layout="@layout/common_title"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp">
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="bottom"
+                        android:background="#33000000"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_title_vp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="#ffffff" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dip"
+                            android:gravity="center">
+
+                            <View
+                                android:id="@+id/v_dot0"
+                                style="@style/dot_style"
+                                android:background="@drawable/dot_focused" />
+
+                            <View
+                                android:id="@+id/v_dot1"
+                                style="@style/dot_style" />
+
+                            <View
+                                android:id="@+id/v_dot2"
+                                style="@style/dot_style" />
+
+                            <View
+                                android:id="@+id/v_dot3"
+                                style="@style/dot_style" />
+
+                            <View
+                                android:id="@+id/v_dot4"
+                                style="@style/dot_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:textSize="20dip"
+                    android:textColor="#000000"
+                    android:hint="请输入投影仪密钥:" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/miyaotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="请输入密钥" />
+
+                <Button
+                    android:layout_height="38dp"
+                    android:background="@drawable/buttonstyle"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:id="@+id/Connect"
+                    android:layout_width="wrap_content"
+                    android:text="连接" />
+                <Button
+                    android:layout_height="38dp"
+                    android:background="@drawable/buttonstyle"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:id="@+id/ScanButton"
+                    android:layout_width="match_parent"
+                    android:text="扫一扫" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tishiadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:textSize="20dip"
+                    android:textColor="#000000"
+                    android:hint="管理员密钥:" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/miyaotextadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="请输入密钥" />
+
+                <Button
+                    android:layout_height="38dp"
+                    android:background="@drawable/buttonstyle"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:id="@+id/Connectadmin"
+                    android:layout_width="fill_parent"
+                    android:text="连接" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

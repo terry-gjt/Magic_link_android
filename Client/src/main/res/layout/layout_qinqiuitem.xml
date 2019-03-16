@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@mipmap/phone" />
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="10号机请求连接"
+        android:textSize="18sp" />
+    <ImageButton
+        android:id="@+id/choose0101"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@mipmap/gqe" />
+    <Button
+        android:id="@+id/delete0101"
+        android:layout_width="60dip"
+        android:layout_height="38dip"
+        android:background="@drawable/buttonstyle"
+        android:textColor="#ffffff"
+        android:text="拒绝" />
+</LinearLayout>

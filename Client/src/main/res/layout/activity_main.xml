@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magic.terry.magic_link_all.activity.MainActivity">
+    <com.magic.terry.magic_link_all.ui.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--菜单界面的布局-->
+        <include layout="@layout/layout_menu"/>
+        <!--主界面的布局-->
+        <include layout="@layout/layout_main"/>
+    </com.magic.terry.magic_link_all.ui.SlideMenu>
+</RelativeLayout>
