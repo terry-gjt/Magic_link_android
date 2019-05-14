@@ -45,7 +45,7 @@ public class ServerfullActivity extends Activity implements VideoThreadShow,View
 //    public static List<ChatThread> videothreads = new ArrayList<ChatThread>();
     VideoThread videothread[]=new VideoThread[3];
     ServerSocket serverSocket;
-    boolean IsComputer=true;
+    boolean IsComputer=false;
     public BufferedInputStream photoin;
     private SurfaceView surfaceView[]=new SurfaceView[3];
     private RelativeLayout RLayout[]=new RelativeLayout[3];

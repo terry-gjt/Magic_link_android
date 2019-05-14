@@ -13,6 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="系统已启动\n"
-        android:textSize="40sp" />
+        android:text="系统已准备好屏幕共享，\n正在等待对方上线。。。\n若对方连接失败，可扫描二维码重新连接\n"
+        android:textSize="20sp" />
 </LinearLayout>
